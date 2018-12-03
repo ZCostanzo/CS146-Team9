@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="test.css"/>
-    <title>title</title>
+    <title>Donate to Rainforest Rescue</title>
   </head>
   <script>
-  	function donatePress(button) {
-  		console.log(button.id)
-  		let x = getElementById(button.id)
-  		x.style.display = none;
+  	function donatePress() {
+		alert("Thank you for supporting Rainforest Rescue!");
   	}
 
   </script>
   <body>
+	<h1 id="formHeader">Donate to Rainforest Rescue</h1>
   	<form class="donateForm">
   		<div class="selection">
   			<p>FIRST NAME</p>
@@ -28,13 +27,13 @@
   				<input type="text" name="email">
   		<div class="selection">
   			<p>AMOUNT</p>
-  				<span>$</span><input type="number" min="0.01" step="0.01" name="amount">
+  				<input type="number" min="0.01" step="0.01" name="amount">
   		</div>
   		<div class="selection">
   			<p>MESSAGE</p>
   				<input type="text" name="message" id="message">
   		</div>
-  	<button class="styleButton" id="formButton">Send Donation</button>
+  	<button class="styleButton" id="formButton" onclick="donatePress()">Send Donation</button>
 
   		
   	</form>

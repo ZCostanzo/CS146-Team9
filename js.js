@@ -24,3 +24,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+function printAlert(){
+		alert("Thank you for your feedback! We will get back to you shortly");
+}
+function redirect() {
+	window.open('Form.html', '_blank');
+}
